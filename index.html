@@ -79,6 +79,7 @@
       grid-template-columns: 1fr 3fr; /* Сетка: 1/4 ширины для .project-title, 3/4 для .gallery */
       gap: 16px; /* Отступ между колонками */
       align-items: start; /* Выравнивание по верхнему краю */
+      margin-bottom: 256px;
     }
 
     .project-title {
@@ -87,8 +88,15 @@
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(3, 1fr); /* Три равные колонки */
       gap: 16px;
+    }
+
+    .gallery-3col{
+      grid-template-columns: repeat(3, 1fr); /* Три равные колонки */
+    }
+
+    .gallery-4col{
+      grid-template-columns: repeat(4, 1fr); /* Три равные колонки */
     }
 
     .gallery img {
@@ -173,14 +181,14 @@
         <p>
         the pillar
         <br><br>
-        The Pillar is a collective art project led by Misha Katz involving over 20 participants including graphic designers, art directors, and artists. Over six weeks they created “self-objects” in 3D.
+        The Pillar is a collective art project led by Misha Katz, involving over 20 participants, including graphic designers, art directors, and artists. Over six weeks, they created “self-objects” in 3D.
         <br><br>
-        The project continues to evolve with new works being added by future participants.
+        The project continues to evolve, with new works being added by future participants.
         <br><br>
         Project website: <a href="thepillar.method.education">thepillar.method.education</a>
         </p>
       </div>
-      <div class="gallery" data-gallery="1">
+      <div class="gallery gallery-3col" data-gallery="1">
         <img src="img/FRONT ver.2.jpg" alt="Gallery Image 1" />
         <img src="img/Pages CENTER ver.2.jpg" alt="Gallery Image 8" />
         <img src="img/Pages 1-2 ver.2.jpg" alt="Gallery Image 1" />
@@ -205,13 +213,22 @@
     <!-- Второй проект -->
     <div class="project">
         <div class="project-title">
-          <h2>Название проекта</h2>
-          <p>Описание проекта</p>
+          <p>
+            forma
+            <br><br>
+
+          </p>
         </div>
-        <div class="gallery" data-gallery="1">
-          <img src="image1.jpg" alt="Image 1">
-          <img src="image2.jpg" alt="Image 2">
-          <img src="image3.jpg" alt="Image 3">
+        <div class="gallery gallery-4col" data-gallery="1">
+          <img src="img/forma/Forma 1.jpg" alt="Image 1">
+          <img src="img/forma/Forma 2.jpg" alt="Image 2">
+          <img src="img/forma/Forma 3.jpg" alt="Image 3">
+          <img src="img/forma/Forma 4.jpg" alt="Image 4">
+          <img src="img/forma/Forma 5.jpg" alt="Image 5">
+          <img src="img/forma/Forma 6.jpg" alt="Image 6">
+          <img src="img/forma/Forma 7.jpg" alt="Image 7">
+          <img src="img/forma/Forma 8.jpg" alt="Image 8">
+          <img src="img/forma/Forma 9.jpg" alt="Image 9">
         </div>
       </div>
 
