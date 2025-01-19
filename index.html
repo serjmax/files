@@ -8,9 +8,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <style>
-    
-
-
     * {
       box-sizing: border-box;
       margin: 0;
@@ -20,16 +17,22 @@
       line-height: 20px;
     }
 
-    h1, h2, h3, p,a{
-        font-family: 'Inter', sans-serif;
-        font-size: 16px;
-        line-height: 20px;
+    p, a{
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 300;
+      color: rgb(155, 155, 155);
+    }
+
+    h2{
+      font-size: 22px;
+      font-weight: 300;
+      margin-bottom: 16px;
     }
 
     a {
       text-decoration: none; /* Убираем стандартное подчеркивание */
       position: relative; /* Для псевдоэлемента */
-      color: black; /* Цвет текста (можно поменять) */
     }
 
     a::after {
@@ -39,7 +42,7 @@
       bottom: -3px; /* Расстояние от текста до линии */
       width: 100%;
       height: 1px; /* Толщина линии */
-      background-color: black; /* Цвет линии */
+      background-color: rgb(155, 155, 155); /* Цвет линии */
       transition: background-color 0.3s; /* Плавный эффект изменения */
     }
 
@@ -50,14 +53,21 @@
     body {
       font-family: 'Inter', sans-serif;
       padding: 24px;
+      padding-top: 0px;
+      background-color: #111; /* глубокий черный */
+      color: #fff; /* белый текст */
+    }
+
+    .web_name{
+      text-transform: uppercase;
+      font-weight: 300;
     }
 
     .header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      /* padding: 20px 0; */
-      /* border-bottom: 1px solid #ddd; */
+      height: 68px;
     }
 
     .header a {
@@ -75,8 +85,10 @@
       grid-template-columns: 1fr 3fr; /* Сетка: 1/4 ширины для .project-title, 3/4 для .gallery */
       gap: 16px; /* Отступ между колонками */
       align-items: start; /* Выравнивание по верхнему краю */
-      margin-bottom: 256px;
-      padding-top: 24px;
+      background-color: #222;
+      border-radius: 10px;
+      padding: 16px;
+      margin-bottom: 24px;
     }
 
     .project-title {
@@ -85,7 +97,7 @@
 
     .gallery {
       display: grid;
-      gap: 16px;
+      gap: 12px;
     }
 
     .gallery-3col{
@@ -101,6 +113,7 @@
       height: auto;
       display: block;
       cursor: pointer; /* Курсор превращается в руку */
+      border-radius: 6px;
     }
 
     /* Lightbox styles */
@@ -163,7 +176,7 @@
 </head>
 <body>
   <div class="header">
-    <div>the slightly black</div>
+    <div class="web_name">the slightly black</div>
     <div>
       <!-- <a href="#">Storage</a> -->
       <!-- <a href="#">Contact</a> -->
@@ -174,9 +187,8 @@
     <!-- Первый проект -->
     <div id="thepillar" class="project">
       <div class="project-title">
+        <h2>The Pillar</h2>
         <p>
-        the pillar
-        <br><br>
         The Pillar is a collective art project led by Misha Katz involving over 20 participants including graphic designers, art directors and artists. Over six weeks they created “self-objects” in 3D.
         <br><br>
         The project continues to evolve with new works being added by future participants.
@@ -210,11 +222,7 @@
     <!-- Второй проект -->
     <div id="forma" class="project">
         <div class="project-title">
-          <p>
-            forma
-            <br><br>
-
-          </p>
+          <h2>Forma</h2>
         </div>
         <div class="gallery gallery-4col" data-gallery="1">
           <img src="img/forma/Forma 1.jpg" alt="Image 1">
