@@ -97,6 +97,17 @@
       margin-right: 16px;
     }
 
+    .title-wrapper {
+      display: flex;
+      align-items: center; /* Выравнивание по центру по вертикали */
+      gap: 8px; /* Отступ между иконкой и текстом */
+    }
+
+    .project-icon {
+      width: 24px; /* Размер иконки */
+      height: 24px;
+    }
+
     .gallery {
       display: grid;
       gap: 12px;
@@ -190,7 +201,10 @@
     <!-- Первый проект -->
     <div id="thepillar" class="project">
       <div class="project-title">
-        <h2>The Pillar</h2>
+        <div class="title-wrapper">
+          <img src="/assets/icons/folder.svg" alt="Project Icon" class="project-icon">
+          <h2>The Pillar</h2>
+        </div>
         <p>
         The Pillar is a collective art project led by Misha Katz involving over 20 participants including graphic designers, art directors and artists. Over six weeks they created “self-objects” in 3D.
         <br><br>
